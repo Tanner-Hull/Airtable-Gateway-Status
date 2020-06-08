@@ -13,10 +13,10 @@ from airtable import Airtable
 
 
 numList = ['0','1','2','3','4','5','6','7','8','9']
-API_KEYSF = '217669dae8b94ec4a36e1372eb800346'
-API_KEYEG = 'c6e07870463c56c66e798cd2b598aef2a17bcc3a'
-API_KEYS_ENGAGE = {"damarend":'b3ed9aff9d694c070d4e15c794eba627a16dfdb6',"bears.gendunas":'2ab3efe7a2ebc64fe36f43589686e76ad84f2afe',
-                   "indarset":'722deed594eaf12317661840d4a0007d2a64b42f',"selareon":'e8a25f460c413947c9ba6c8cd9f890d9152828ba'}
+API_KEYSF = 'API_KEY'
+API_KEYEG = 'API_KEY'
+API_KEYS_ENGAGE = {"damarend":'API_KEY',"bears.gendunas":'API_KEY',
+                   "indarset":'API_KEY',"selareon":'API_KEY'}
 
 headers = {
   'Authorization': 'Token ' + API_KEYSF
@@ -34,7 +34,7 @@ jsonData2 = response2.json()
 EGjson = engageResponse.json()
 
 
-table = Airtable('appdOXoC877tSErXd', "GatewayStatus", api_key = 'key78f4mMjdb7AEBc')
+table = Airtable('appdOXoC877tSErXd', "GatewayStatus", api_key = 'API_KEY')
 
 devicesList = table.get_all()
 
